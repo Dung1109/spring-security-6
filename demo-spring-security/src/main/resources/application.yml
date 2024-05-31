@@ -1,0 +1,15 @@
+spring:
+    application:
+        name: demo-spring-security
+
+server:
+  ssl:
+    key-store: classpath:springboot.p12
+    key-store-password: password
+    key-store-type: pkcs12
+    key-alias: springboot
+    key-password: password
+    enabled: true
+  port: 8081    
+
+#  server.ssl.enabled= true- HTTPS , false-HTTP
